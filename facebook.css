@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(222, 220, 224);
+}
+
+.container {
+    margin: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fb {
+    flex: 50%;
+    padding-left: 10px;
+
+}
+
+h1 {
+    color: blue;
+    font-size: 80px;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.fb2 {
+    margin-top: 70px;
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+button {
+    margin-top: 15px;
+    background-color: blue;
+    padding: 16px;
+    width: 100%;
+    border-radius: 8px;
+    color: white;
+    border-color: #1877f2;
+    font-family: sans-serif;
+    font-size: 18px;
+
+
+}
+
+.loginpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 400px;
+    height: 365px;
+    box-shadow: -10px -10px 15px rgba(0, 0, 0, 0.1),
+        10px 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+input {
+    width: 350px;
+    height: 50px;
+    margin: 8px 0px;
+    padding: 0px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+input:hover {
+    border-color: #1877f2;
+}
+
+p {
+    color: royalblue;
+}
+
+hr {
+    border: 1px solid #ccc;
+    width: 350px;
+    margin: 20px 0px;
+}
+
+.createaccount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1b9c24;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 30px;
+    color: white;
+    border-radius: 8px;
+}
+
+span {
+    margin: 20px 0px;
+    font-size: 18px;
+    font-weight: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .fb .fb2 {
+        flex: 50%;
+        max-width: 50%;
+        flex-direction: column;
+        width: 50%;
+
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex: 100%;
+        max-width: 600px;
+        flex-direction: column;
+    }
+
+    .fb .fb2 {
+        height: auto;
+    }
+
+    h1 {
+        color: blue;
+        text-align: center;
+        font-size: 60px;
+        font-family: sans-serif;
+    }
+
+    h2 {
+        color: black;
+        text-align: center;
+        font-size: 25px;
+        font-family: Helvetica,
+            Arial,
+            sans-serif;
+    }
+}
